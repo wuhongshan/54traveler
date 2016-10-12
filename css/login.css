@@ -1,0 +1,150 @@
+.all {
+    width: 100%;
+    background: url("../images/back9.jpg");
+    background-size: cover;
+    padding-top: 50px;
+}
+
+.row {
+    margin: 0 auto;
+}
+
+.logo {
+    display: block;
+    height: 70px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.register {
+    max-width: 400px;
+    border-radius: 5px;
+    background-color: #fcfbfb;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+}
+
+.head {
+    padding-top: 1px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ddd;
+}
+
+.head h3 {
+    font-size: 22px;
+}
+
+.head a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+
+.head a:hover {
+    color: #337ab7;
+}
+
+.body {
+    padding: 10px 25px;
+}
+
+@media (max-width: 390px) {
+    .body div {
+        width: 100%;
+    }
+
+    .body div:nth-child(2) {
+        text-align: left;
+    }
+}
+
+.name, .password, .code, .dynamic {
+    position: relative;
+}
+
+.name span, .password span {
+    position: absolute;
+    display: none;
+    top: 34px;
+    right: 8px;
+    color: #c9302c;
+}
+
+.code span, .dynamic span {
+    position: absolute;
+    display: none;
+    top: 34px;
+    right: 50%;
+    margin-right: 8px;
+    color: #c9302c;
+}
+
+.body input[type="radio"] {
+    width: 13px;
+    height: 13px;
+    margin: 0;
+    vertical-align: -8%;
+}
+
+input[type="button"] {
+    color: #fff;
+    background-color: #9b0000;
+    border-color: #ac2925;
+}
+
+.body input {
+    width: 100%;
+    height: 40px;
+    margin-top: 20px;
+    padding: 6px 10px;
+    border: 1px #ddd solid;
+}
+
+input[type="button"]:hover {
+    background-color: #c9302c;
+}
+
+.body a {
+    padding-top: 10px;
+    text-decoration: none;
+}
+
+.body a[class="fr"] {
+    color: #777;
+}
+
+.verification input {
+    width: 50%;
+}
+
+.verification img, .verification button {
+    display: inline-block;
+    width: 30%;
+    height: 40px;
+    margin-left: 10%;
+}
+
+.bottom {
+    padding-top: 20px;
+}
+
+.bottom img {
+    width: 20px;
+}
+
+.bottom a {
+    color: #777;
+    text-decoration: none;
+}
+
+@media (max-width: 400px) {
+    .bottom div {
+        width: 33.3333%;
+    }
+
+}
+
+.disable {
+
+}

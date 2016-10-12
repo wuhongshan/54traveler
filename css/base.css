@@ -1,0 +1,356 @@
+/*清除原有样式*/
+*,
+::before,
+::after {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    /*清除移动端点击高亮效果*/
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    width: 100%;
+    font: 14px/1.8 "hiragino sans gb", "Microsoft YaHei", \9ED1\4F53, \5b8b\4f53, sans-serif;
+
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+input[type="text"], input[type="search"], input[type="tel"], textarea {
+    border: none;
+    outline: none;
+    resize: none;
+    /*清除移动端默认的阴影效果*/
+    -webkit-appearance: none; /*设置表单元素不自带浏览器默认样式*/
+}
+
+/*公用*/
+.clearfix::before,
+.clearfix::after {
+    content: "";
+    display: block;
+    height: 0;
+    line-height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.fr {
+    float: right;
+}
+
+.fl {
+    float: left;
+}
+.open{
+    display: block;
+}
+.close{
+    display: none !important;
+}
+.backgroundColor {
+    background: #ad0711;
+}
+
+.red {
+    color: #ad0711;
+}
+
+.headerColor {
+    color: #666;
+}
+.margin-b-2{
+    margin-bottom: 20px;
+}
+.appear{
+    opacity: 1 !important;
+}
+.border{
+    border: 2px solid #c9302c !important;
+}
+/*通用头部*/
+.dcr-header-contact {
+    width: 100%;
+    height: 80px;
+    padding-top: 50px;
+}
+
+.dcr-header-contact > span {
+    padding-left: 75px;
+    color: #fff;
+}
+
+/*通用导航栏*/
+.dcr-nav-default {
+    margin: 0;
+    background-color: #fff;
+    border: none;
+}
+
+.dcr-nav-default .navbar-brand > img {
+    width: 185px;
+    margin-top: -53px;
+}
+@media (max-width: 992px){
+    .dcr-nav-default .navbar-brand{
+        padding: 0;
+    }
+    .dcr-nav-default .navbar-brand > img {
+        width: 100px;
+        margin: 0;
+    }
+}
+@media (max-width: 768px) {
+    .dcr-nav-default{
+        background-color: #ad0711;
+    }
+    .dcr-nav-default .navbar-brand .logo2{
+        display: block;
+       width: 120px;
+        padding-left: 30px;
+        padding-top: 6px;
+     }
+}
+.dcr-nav-default .navbar-nav {
+    padding-left: 50px;
+    width: 60%;
+}
+
+.dcr-nav-default .navbar-nav > li {
+    width: 25%;
+    height: 50px;
+    line-height: 50px;
+    padding: 0;
+    text-align: center;
+}
+
+.dcr-nav-default .navbar-nav > li > a {
+    display: inline-block;
+    width: 100%;
+    padding: 0;
+    font-size: 16px;
+    font-weight: 700;
+    color: #666;
+    border-right: 2px solid #bbb;
+}
+
+.dcr-nav-default .navbar-nav > li:last-child > a {
+    border-right: none;
+}
+
+.dcr-nav-default .navbar-nav > li > a:hover,
+.dcr-nav-default .navbar-nav > li > a:focus {
+    color: #ad0711;
+    background-color: #fff;
+}
+
+.dcr-nav-default .navbar-nav > .active {
+    border-bottom: 3px solid #ad0711;
+}
+
+/*导航栏下拉列表*/
+
+.dcr-nav-default .dropdown-menu {
+    width: 100%;
+    min-width: 100%;
+    top: 45px;
+    padding: 5px 0;
+    text-align: center;
+    border-top: none;
+}
+.dcr-nav-default .dropdown-menu > li > a {
+    padding: 8px 5px;
+    font-size: 15px;
+    color: #666;
+}
+
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    background-color: #ad0711;
+}
+/*改变小屏时button点击的导航样式*/
+.navbar-header{
+    position: relative;
+}
+.userLogin{
+    position: absolute;
+    right: 16%;
+
+}
+.navbar-header span{
+    position: absolute;
+    padding:15px 20px;
+    font-size: 20px;
+    color: #fff;
+}
+.navbar-header span:nth-child(1){
+    right: 28%;
+}
+.navbar-header .right-list{
+    right: 4%;
+}
+/*点击菜单的下拉列表*/
+.dcr-nav-default .menu{
+    position: absolute;
+    top: 50px;
+    right: 0;
+    min-height: 250px;
+    width: 16%;
+    min-width: 100px;
+    border: 2px solid #fff;
+    border-top: none;
+    border-right: none;
+    background-color: #ad0711;
+    z-index: 1;
+}
+.dcr-nav-default .menu li{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+}
+.dcr-nav-default .title{
+    position: relative;
+    border-bottom: 1px solid #fff;
+    padding: 5px;
+    cursor: pointer;
+}
+.dcr-nav-default .title span{
+    position: absolute;
+    top: 12px;
+    padding: 0;
+    font-size: 14px;
+}
+.dcr-nav-default .title span:nth-child(1){
+    left: 10px;
+    width: 14px;
+}
+.dcr-nav-default .title span:nth-child(2){
+    right: 10px;
+}
+.dcr-nav-default .list{
+    width: 100%;
+    padding: 0;
+    background-color: #89010F;
+}
+.dcr-nav-default .list li{
+    padding: 5px;
+    font-size: 14px;
+ }
+.list li a{
+color: #fff;
+}
+/*右侧登录注册*/
+.dcr-nav-default .navbar-right {
+    width: 15%;
+    padding: 0;
+    text-align: center;
+}
+
+.dcr-nav-default .navbar-right li {
+    width: 50%;
+}
+
+/*侧边栏*/
+.dcr-aside{
+    /*position: fixed;*/
+    top: 400px;
+    right: 30px;
+}
+.flexItem{
+    margin-bottom: 3px;
+    padding: 10px 10px 5px;
+    background-color: rgba(190, 190, 190, 0.701961);
+}
+.flexItem a{
+    display: inline-block;
+    width: 33px;
+    height: 33px;
+    background-image:url("../images/sprites.png");
+}
+.dcr-aside .flexItem>a{
+    background-position: 0 -180px;
+}
+.fixed .flexItem:nth-child(1)>a{
+    background-position: 0 -135px;
+}
+.fixed{
+    position:fixed;
+    top: 458px;
+    right: 30px;
+}
+/*底部*/
+.dcr-footer{
+    padding: 60px 0;
+    background-color:  #9b0000;
+}
+.footer-join ul{
+    margin: 0;
+    line-height: 32px;
+}
+.footer-join li{
+padding: 0 5px;
+    border-right: 1px solid #fff;
+}
+.footer-join li:last-child{
+    border: none;
+}
+.footer-join li a{
+    margin:0 15px;
+    color: #fff;
+}
+.footer-join li a span{
+    display: inline-block;
+    width: 27px;
+    height: 25px;
+    background: url("../images/sprites.png");
+}
+.footer-join .weixin span{
+    background-position: 0 -221px;
+}
+.footer-join .sina span{
+    background-position: 0 -102px;
+}
+.footer-join .dou span{
+    background-position:  0 -43px;
+}
+.footer-join .ting span{
+    background-position:  0 -254px;
+}
+.logo2{
+    width: 170px;
+}
+.footer-address p{
+    color: #fff;
+    font-size: 12px;
+}
+.footer-gongshan{
+    margin-top: 15px;
+}
+.footer-gongshan a{
+    color: #fff;
+    font-size: 12px;
+}
+.gongshang{
+    display: inline-block;
+    width: 38px;
+}
+.footer-gongshan p{
+    margin-left: 48px;
+}
+.pic{
+    margin-left: 120px;
+}
